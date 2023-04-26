@@ -20,8 +20,8 @@ class TurnError {
       log.error('Error detected via [onTurnError]. Additional description: \n', turnError)
 
       try {
-        //TODO: remove below comment once logException is configured
-        //await this.logException.telemetryClientException(context, botAnswer, turnError)
+        // TODO: remove below comment once logException is configured
+        // await this.logException.telemetryClientException(context, botAnswer, turnError)
       } catch (error) {
         log.error('Error occurred when trying to create event tracking on logException.js: ', error)
       }
@@ -46,7 +46,7 @@ class TurnError {
       await this.accessors.conversationState.delete(context)
       return this.accessors.conversationState.saveChanges(context)
     } catch (error) {
-      log.error(
+      return log.error(
         'Error when trying to do turnError tasks, which includes cancelling all dialogs from turnError. Additional description: ',
         error
       )

@@ -35,7 +35,8 @@
     "restify": "~8.6.0"
   },
   "devDependencies": {
-    "eslint": "^8.2.0",
+    "@babel/eslint-parser": "^7.21.3",
+    "eslint": "^8.39.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-node": "^4.1.0",
     "eslint-config-prettier": "^8.6.0",
